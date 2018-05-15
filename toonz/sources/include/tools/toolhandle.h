@@ -63,11 +63,12 @@ public:
 
   /*! Notify tool parameters change (out of toolOption bar).*/
   void notifyToolChanged() { emit toolChanged(); }
-
+  void notifyToolOptionsBoxChanged() { emit toolOptionsBoxChanged(); }
   void notifyToolCursorTypeChanged() { emit toolCursorTypeChanged(); }
 signals:
   void toolSwitched();
   void toolChanged();
+  void toolOptionsBoxChanged();
   void toolEditingFinished();
   // used for changing the tool cursor when the options changed with short cut
   // keys assigned for tool options.
