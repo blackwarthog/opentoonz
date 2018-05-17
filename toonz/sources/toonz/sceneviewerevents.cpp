@@ -1469,6 +1469,8 @@ void SceneViewer::onToolSwitched() {
   TTool *tool = TApp::instance()->getCurrentTool()->getTool();
   if (tool) tool->updateMatrix();
 
+  rebuildModifiers();
+
   onLevelChanged();
   update();
 }
