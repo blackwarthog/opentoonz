@@ -8,7 +8,9 @@
 #include "toonz/txsheet.h"
 #include "toonz/imagepainter.h"
 #include "toonz/tapplication.h"
-#include "tools/cursors.h"
+
+// TnzQt includes
+#include "toonzqt/cursors.h"
 
 // TnzCore includes
 #include "tcommon.h"
